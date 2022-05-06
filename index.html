@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
+    <title>Aina</title>
+</head>
+<body>
+    <!-- navigation bar starts -->
+    <nav id="navbar" class="navbar navbar-expand-lg nav-fixed fixed-top scrolled r-nav">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/icons/alogo.png"  class="d-inline-block align-text-top" width="50px" height="50px" alt="logo">
+                    Aina
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="nav-menu" aria-controls="nav-menu" aria-expanded="false"><span class="navbar-toggler-icon">Test</span></button>
+            <div id="nav-menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills-section" class="nav-link">Services</a></li>
+                    <!-- <li class="nav-item"><a href="#services-section" class="nav-link">Skills</a></li> -->
+                    <li class="nav-item"><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation bar starts -->
+    <!-- Header section starts -->
+    <header id="home-section" class="home">
+        <div class="container-fluid mb-3">
+            <div id="welcome-banner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="0" aria-label="slide 0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="1" aria-label="slide 1"></button>
+                    <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="2" aria-label="slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/bgtemp.png" alt="slide 0" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/bgtemp.png" alt="slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/bgtemp.png" alt="slide 2" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-content">
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center"><img src="/images/icons/code-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center"><img src="/images/icons/bars-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Design</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center"><img src="/images/icons/server-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">CNC</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="social-link-to-hide">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><a href="#"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
+                        <li class="list-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
+                        <li class="list-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
+                        <li class="list-item"><a href="#"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
+                        <li class="list-item"><a href="#"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-down" class="container mt-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-3 mt-5">
+                    <p class="about-btn-title">MORE ABOUT ME</p>
+                    <div class="flex-box">
+                        <a href="#about-section" class="scroll-button text-center">
+                            <img src="/images/icons/down-arrow.svg" height="40px" width="40px" alt="image">
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header section ends -->
+    <!-- About section starts here -->
+    <section id="about-section" class="about">
+        <div class="container">
+            <div class="row h3-title">
+                <h2 class="about-title">About The author</h2>
+            </div>
+            <div class="row">
+                <!-- Article 01 starts here -->
+                <div class="col-lg-4">
+                    <div class="block-box">
+                        <div id="card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">The author</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div id="card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Studies</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article 01 ends here -->
+                <!-- Profile picture starts here -->
+                <div class="col-lg-4 col-10 sm-justify-content-center ">
+                    <div class="block-box">
+                        <div class="card">
+                            <img src="/images/Founders.JPG" class="img-fluid" alt="profile picture">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Aina Andriamiadantsoa</h3>
+                                <p class="card-text text-center">The author</p>
+                            </div>
+                            <!-- <div id="social-link" class="card-footer bg-white">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="#"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
+                                        <li class="list-inline-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
+                                        <li class="list-inline-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
+                                        <li class="list-inline-item"><a href="#"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
+                                        <li class="list-inline-item"><a href="#"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
+                                    </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Profile picture ends here -->
+                <!-- Article 02 starts here -->
+                <div class="col-lg-4 ">
+                    <div class="block-box">
+                        <div id="exp-card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Experiences</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur? Culpa asperiores quia eum saepe animi debitis?</p>
+                                <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/css3.png" alt="slides" class="d-block w-100 align-self-center">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/js.png" alt="slides" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/jquery.png" alt="slides" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/bootstrap.png" alt="slides" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/wp.png" alt="slides" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/cisco.png" alt="slides" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article 02 ends here -->
+            
+            </div>
+            <div class="row">
+                <!-- Contact starts here -->
+                <div class="col-lg-4 mt-3">
+                    <div class="flex-box">
+                        <a href="#contact-section" class="btn">CONTACT ME</a>
+                    </div>
+                </div>
+                <!-- Contact starts here -->
+                <div class="col-lg-4"></div>
+                <!-- Download cv starts here -->
+                <div class="col-lg-4 mt-3">
+                    <div class="flex-box">
+                        <a href="#" class="btn">DOWNLOAD CV</a>
+                    </div>
+                </div>
+                <!-- Download cv ends here -->
+            </div>
+        </div>
+    </section>
+    <!-- About section ends here -->
+    <!-- Skills section starts here -->
+    <section id="skills-section" class="skills">
+        <div class="container">
+            <div class="row h3-title">
+                <h2 class="skills-title">Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="block-box">
+                        <div id="card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><img src="/images/icons/laptop-code-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web application</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                            </div>
+                        </div>
+                        <div id="card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><img src="/images/icons/code-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web site</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="block-box">
+                        <div id="card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><img src="/images/icons/network-wired-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Graphic Design</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                            </div>
+                        </div>
+                        <div id="card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><img src="/images/icons/network-wired-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web Design</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="block-box">
+                        <div id="networking-card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><img src="/images/icons/network-wired-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img"> CNC</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur? Culpa asperiores quia eum saepe animi debitis?</p>  
+                                <div class="canvas">
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section ends here -->
+    <!-- Services section starts -->
+    <!-- <section id="services-section" class="services">
+        <div class="container">
+            <div class="row h3-title">
+                <h2 class="services-title">Our Services</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12 border">
+                    <div class="canvas-box">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Services section ends -->
+    <!-- Portfolio section starts -->
+    <section id="portfolio-section" class="portfolio">
+        <div class="container">
+            <div class="row h3-title">
+                <h2 class="portfolio-title">Portfolio</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Web Portfolio</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Design Portfolio</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">CNC</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>        
+    </section>
+    <!-- Portfolio section ends -->
+    <!-- Contact section starts here -->
+    <section id="contact-section" class="contact">
+        <div class="container">
+            <div class="row h3-title">
+                <h2 class="contact-title">Contact Me</h2>
+            </div>
+            <div class="row justify-content-around">
+                <div id="FAQ" class="col-lg-6">
+                    <h3 class="display-6 text-center my-3">FAQ</h3>
+                    <div class="block-box p-2 px-2">
+                        <div class="row">
+                            <input type="text" class="form-control my-3" placeholder="Firstname">
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control my-3" placeholder="Lastname">
+                        </div>
+                        <div class="row">
+                            <input type="email" class="form-control my-3" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control my-3" placeholder="Subject">
+                        </div>
+                        <div class="row">
+                            <textarea name="" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="flex-box justify-content-end ">
+                            <a href="#" class="btn">SEND MESSAGE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h3 class="display-6 text-center my-3">Contact</h3>
+                        <div class="card-body">
+                            <div id="email" class="block-box text-center">
+                                <h3>Email</h3>
+                                <div class="icons">
+                                    <img class="contact-img" src="/images/icons/envelope-solid.svg" alt="email-icon">
+                                </div>
+                                <p><a href="#" class="email">andriamiadantsoaaina@gmail.com</a></p>
+                            </div>
+                            <div id="phone" class="block-box text-center">
+                                <h3>Phone number</h3>
+                                <div class="icons">
+                                    <img class="contact-img" src="/images/icons/phone-solid.svg" alt="phone-icon">
+                                </div>
+                                <p>+261 032 66 245 62</p>
+                            </div>
+                            <div id="address" class="block-box text-center">
+                                <h3>Address</h3>
+                                <div class="icons">
+                                    <img class="contact-img" src="/images/icons/location-dot-solid.svg" alt="location-icon">
+                                </div>
+                                <p>Lot IIE 46Bter ,Ampanotokana, Antananarivo, Madagascar</p>
+                            </div>
+                        </div>
+                        <!-- <div class="card-footer bg-white ">
+                            <div class="flex-box">
+                                <ul class="list-inline d-block">
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/facebook-brands.svg" alt="facebook-icon"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section ends here -->
+    <!-- Footer section starts here -->
+    <footer id="footer-section" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="flex-box">
+                    <p>AinaHjs.github.io by Andriamiadantsoa Aina</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section ends here -->
+    
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/pixi.min.js"></script>
+    <script src="lib/app.js"></script>
+</body>
+</html>

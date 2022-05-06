@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-Regular',sans-serif;
+}
+$primary: #4898C7;
+$secondary: #92A8B4;
+
+@font-face {
+    font-family: 'Montserrat-Extralight';    
+    src: url('/fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';    
+    src: url('/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito-light';    
+    src: url('/fonts/Nunito-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';    
+    src: url('/fonts/Nunito-Regular.ttf');
+}
+
+body {
+    // Basic rules starts
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Montserrat-Regular',sans-serif;
+        color: #585858;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-family: 'Montserrat-Regular',sans-serif;
+        color: #585858;
+    }
+    
+    h3 {
+        font-size: 20px;
+        font-family: 'Montserrat-Regular',sans-serif;
+        color: #585858;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-family: 'Montserrat-Regular',sans-serif;
+        color: #585858;
+    }
+    
+    p {
+        font-family: 'Nunito-Regular';
+        font-size: 16px;
+        line-height: 26px;
+        color: #ACACAC;
+    }
+
+    .btn {
+        color: $primary;
+        font-weight: 600;
+        border: 1px solid $primary;
+        border-radius: 25px;
+        padding: 5px 25px;
+        justify-content: center;
+        transition: 0.5s all;
+    }
+    .btn:hover {
+        color: #fff;
+        font-weight: 600;
+        /* background-color: #C8D5FF; */
+        background-color: $primary;
+        border: 1px solid $primary;
+        /* border: 2px solid #C8D5FF; */
+        border-radius: 25px;
+        padding: 5px 25px;
+        transition: 0.5s all ease;
+    }
+
+    .about {
+        width: 100%;
+        height:100%;
+        padding-top: 90px;
+    }
+    .skills {
+        width: 100%;
+        height:100%;
+        padding-top: 90px;
+    }
+    .services {
+        width: 100%;
+        height:100%;
+        padding-top: 90px;
+    }
+    .portfolio {
+        width: 100%;
+        height:100%;
+        padding-top: 90px;
+    }
+    .contact {
+        width: 100%;
+        height:100%;
+        padding-top: 90px;
+    }
+    .flex-box {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .block-box {
+        display: block;
+    }
+    
+    .wrapper-row-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .wrapper-column-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    // Navigation section css starts
+    nav {
+        padding: 30px;
+        &.r-nav {
+            // background:transparent;
+            height: 80px;
+            padding: 10px 0;
+            transition: 0.5s all ease;
+        }
+        .navbar-brand , .logo {
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            color: #ffffff;
+            a {
+                padding: 10px;
+
+            }
+        }
+        ul {
+            padding: 20px;
+            li {
+
+                margin-left: 20px;
+                font-size: 18px;
+                font-weight: 400px;
+                line-height: 30px;
+                letter-spacing: 1px;
+                margin: 5px;
+                a {
+                    height: 40px;
+                    margin: 0;
+                    padding: 0;
+                    color: #FFFFFF !important;
+                }
+                &.active {
+                    a {
+                        background-color: $secondary !important;
+                        font-weight: bold;
+                    }
+                }
+                a:hover {
+                    border-bottom: 1px solid $secondary;
+                    transition: 0.1s all ease-in-out;
+                }
+            }
+        }
+        &.scrolled {
+                background-color: #000000 !important ;
+                color: $primary;
+                transition: 0.5s all ease-in;
+        }
+    }
+    // Navigation section css ends
+
+    // Home section css starts
+    header {
+        .card {
+            text-align: left;
+            border: none;
+            box-shadow: 1px 1px 16px #E5E5E5;
+            transition: 0.5s all;
+        }
+        .about-btn-title {
+            font-size: 18px;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .scroll-button {
+            color: $primary;
+            transition: 0.5s all ease;
+        }
+        .welcome-banner {
+            min-width: 100%;
+            min-height: 75%;
+            background-image: url('/images/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .social-link-to-hide {
+            width: 100px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 11;
+            ul {
+                float: right;
+                margin-bottom: 85px;
+                li {
+                    height: 50px;
+                    width: 50px;
+                    a {
+                        margin: 20px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    a:hover {
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Home section css ends
+
+
+    // About section css starts
+    .about {
+        .card {
+            text-align: left;
+            border: none;
+            box-shadow: 1px 1px 16px #E5E5E5;
+            transition: 0.5s all;
+        }
+        #card {
+            height: 320px;
+            margin-bottom: 20px;
+            overflow: auto;
+            transition: 0.5s all;
+        }
+        #exp-card {
+            height: 660px;
+        }
+        // .content-box-2 {
+        //     .image-box {
+                
+        //     }
+        // }
+        #social-link {
+            display: flex;
+            padding:0;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            ul {
+                margin: 0;
+                height: 60px;
+                li {
+                    margin-top: 10px;
+                    padding: 5px;
+                    width: 40px;
+                    height: 40px;
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        img {
+                            // margin: 5px;
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                    a:hover {
+                        img {
+                            margin: 0;
+                            padding: 0;
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // About section css ends
+                            // .h3-title {
+                            //     padding-bottom: 30px;
+                            // }
+
+                            // .content-box-2 .image-box {
+                            //     width: 400px;
+                            //     height: 500px;
+                            // }
+    // Skills section css starts
+    .skills {
+        #card {
+            height: 320px;
+            margin-bottom: 20px;
+            overflow: auto;
+            transition: 0.5s all;
+        }
+
+        #networking-card {
+            height: 660px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 1px 1px 16px #E5E5E5;
+            transition:0.5s all;
+        }
+    }
+    // Skills section css ends
+
+    // services section css starts
+    .services {
+        .canvas-box {
+            width: 100%;
+            height: 80vh;
+            background-image: url('../images/canvasBackground.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: 0.5s all ease-in-out;
+        }
+    }
+    // services section css ends
+
+    // portfolio section css starts
+    .portfolio {
+        .card {
+            height:80vh;
+            text-align: left;
+            border: none;
+            box-shadow: 1px 1px 16px #E5E5E5;
+            transition: 0.5s all;
+        }
+        #portfolioSlider {
+            width: 100%;
+            height: 450px;
+            background-color: #000000;
+            transition: 0.5s all ease-in-out;
+        }
+    }
+    // portfolio section css ends
+
+    // contact section css starts
+    .contact {
+        .email {
+            text-decoration: none;
+            color: #ACACAC;
+        }
+        .contact-img {
+            height: 20px;
+            width: 20px;
+        }
+        #FAQ {
+            border: none;
+            box-shadow: 1px 1px 16px #E5E5E5;
+            transition: 0.5s all;
+        }
+        #email, #phone, #address {
+        padding: 10px;
+        margin: 10px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 1px 1px 16px #E5E5E5;
+            transition: 0.5s all;
+            .card-footer {
+                min-height: 80px;
+                align-items: center;
+                ul {
+                    margin: 0;
+                    height: 60px;
+                    li {
+                        margin-top: 10px;
+                        padding: 5px;
+                        width: 40px;
+                        height: 40px;
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            img {
+                                // margin: 5px;
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                        a:hover {
+                            img {
+                                margin: 0;
+                                padding: 0;
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // contact section css ends
+
+    // footer section css starts here
+    footer {
+        color: $primary;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    // footer section css ends here
+
+}
+
+
+
+
+
