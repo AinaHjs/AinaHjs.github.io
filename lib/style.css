@@ -99,17 +99,17 @@ body .flex-box {
 body .block-box {
   display: block;
 }
-body .wrapper-row-box {
+body .flex-box-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-body .wrapper-column-box {
+body .flex-box-column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 body nav {
   padding: 30px;
