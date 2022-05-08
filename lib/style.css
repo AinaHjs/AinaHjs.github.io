@@ -4,44 +4,28 @@
   font-family: "Montserrat-Regular", sans-serif;
 }
 
-@font-face {
-  font-family: "Montserrat-Extralight";
-  src: url("/fonts/Montserrat-ExtraLight.ttf");
-}
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("/fonts/Montserrat-Regular.ttf");
-}
-@font-face {
-  font-family: "Nunito-light";
-  src: url("/fonts/Nunito-Light.ttf");
-}
-@font-face {
-  font-family: "Nunito-Regular";
-  src: url("/fonts/Nunito-Regular.ttf");
-}
 body h1 {
   font-size: 50px;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #585858;
 }
 body h2 {
   font-size: 40px;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #585858;
 }
 body h3 {
   font-size: 20px;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #585858;
 }
 body h4 {
   font-size: 16px;
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #585858;
 }
 body p {
-  font-family: "Nunito-Regular";
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #ACACAC;
@@ -153,10 +137,16 @@ body nav ul li a:hover {
   border-bottom: 1px solid #92A8B4;
   transition: 0.1s all ease-in-out;
 }
+body nav .humbar {
+  color: #fff;
+}
 body nav.scrolled {
   background-color: #000000 !important;
   color: #4898C7;
   transition: 0.5s all ease-in;
+}
+body nav.scrolled .humbar {
+  color: #fff;
 }
 body header .card {
   text-align: left;

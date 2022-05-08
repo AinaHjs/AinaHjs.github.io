@@ -6,55 +6,35 @@
 $primary: #4898C7;
 $secondary: #92A8B4;
 
-@font-face {
-    font-family: 'Montserrat-Extralight';    
-    src: url('/fonts/Montserrat-ExtraLight.ttf');
-}
-
-@font-face {
-    font-family: 'Montserrat-Regular';    
-    src: url('/fonts/Montserrat-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Nunito-light';    
-    src: url('/fonts/Nunito-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Nunito-Regular';    
-    src: url('/fonts/Nunito-Regular.ttf');
-}
-
 body {
     // Basic rules starts
 
     h1 {
         font-size: 50px;
-        font-family: 'Montserrat-Regular',sans-serif;
+        font-family: 'Montserrat',sans-serif;
         color: #585858;
     }
 
     h2 {
         font-size: 40px;
-        font-family: 'Montserrat-Regular',sans-serif;
+        font-family: 'Montserrat',sans-serif;
         color: #585858;
     }
     
     h3 {
         font-size: 20px;
-        font-family: 'Montserrat-Regular',sans-serif;
+        font-family: 'Montserrat',sans-serif;
         color: #585858;
     }
     
     h4 {
         font-size: 16px;
-        font-family: 'Montserrat-Regular',sans-serif;
+        font-family: 'Montserrat',sans-serif;
         color: #585858;
     }
     
     p {
-        font-family: 'Nunito-Regular';
+        font-family: 'Nunito', sans-serif;
         font-size: 16px;
         line-height: 26px;
         color: #ACACAC;
@@ -177,10 +157,20 @@ body {
                 }
             }
         }
+
+        .humbar {
+            color: #fff;
+        }
+        
         &.scrolled {
                 background-color: #000000 !important ;
                 color: $primary;
                 transition: 0.5s all ease-in;
+
+                
+                .humbar {
+                    color: #fff;
+                }
         }
     }
     // Navigation section css ends
