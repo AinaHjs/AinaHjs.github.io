@@ -1,34 +1,64 @@
+$primary: #4898C7;
+$secondary: #92A8B4;
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat-Regular',sans-serif;
 }
-$primary: #4898C7;
-$secondary: #92A8B4;
+
+.btn {
+    color: $primary;
+    font-weight: 600;
+    border: 1px solid $primary;
+    border-radius: 25px;
+    padding: 5px 25px;
+    justify-content: center;
+    transition: 0.5s all;
+}
+.btn:hover {
+    color: #fff;
+    font-weight: 600;
+    background-color: $primary;
+    border: 1px solid $primary;
+    border-radius: 25px;
+    padding: 5px 25px;
+    transition: 0.5s all ease;
+}
+
+.about,.skills,.services,.portfolio,.contact {
+    width: 100%;
+    height:100%;
+    padding-top: 90px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.block-box {
+    display: block;
+}
+
+.flex-box-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-box-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 body {
-    // Basic rules starts
-
-    h1 {
-        font-size: 50px;
-        font-family: 'Montserrat',sans-serif;
-        color: #585858;
-    }
-
-    h2 {
-        font-size: 40px;
-        font-family: 'Montserrat',sans-serif;
-        color: #585858;
-    }
-    
-    h3 {
-        font-size: 20px;
-        font-family: 'Montserrat',sans-serif;
-        color: #585858;
-    }
-    
-    h4 {
-        font-size: 16px;
+    h1,h2,h3,h4,h5,h6 {
         font-family: 'Montserrat',sans-serif;
         color: #585858;
     }
@@ -38,76 +68,6 @@ body {
         font-size: 16px;
         line-height: 26px;
         color: #ACACAC;
-    }
-
-    .btn {
-        color: $primary;
-        font-weight: 600;
-        border: 1px solid $primary;
-        border-radius: 25px;
-        padding: 5px 25px;
-        justify-content: center;
-        transition: 0.5s all;
-    }
-    .btn:hover {
-        color: #fff;
-        font-weight: 600;
-        /* background-color: #C8D5FF; */
-        background-color: $primary;
-        border: 1px solid $primary;
-        /* border: 2px solid #C8D5FF; */
-        border-radius: 25px;
-        padding: 5px 25px;
-        transition: 0.5s all ease;
-    }
-
-    .about {
-        width: 100%;
-        height:100%;
-        padding-top: 90px;
-    }
-    .skills {
-        width: 100%;
-        height:100%;
-        padding-top: 90px;
-    }
-    .services {
-        width: 100%;
-        height:100%;
-        padding-top: 90px;
-    }
-    .portfolio {
-        width: 100%;
-        height:100%;
-        padding-top: 90px;
-    }
-    .contact {
-        width: 100%;
-        height:100%;
-        padding-top: 90px;
-    }
-    .flex-box {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    .block-box {
-        display: block;
-    }
-    
-    .flex-box-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .flex-box-column {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     // Navigation section css starts
