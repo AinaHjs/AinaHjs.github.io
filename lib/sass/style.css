@@ -65,6 +65,7 @@ body p {
   color: #ACACAC;
 }
 body nav {
+  display: flex;
   padding: 30px;
 }
 body nav.r-nav {
@@ -72,13 +73,16 @@ body nav.r-nav {
   padding: 10px 0;
   transition: 0.5s all ease;
 }
-body nav .navbar-brand, body nav .logo {
+body nav .navbar-brand {
   width: 50px;
   height: 50px;
+  display: flex;
+}
+body nav .navbar-brand .brand-name {
   font-size: 40px;
   color: #ffffff;
 }
-body nav .navbar-brand a, body nav .logo a {
+body nav .navbar-brand a {
   padding: 10px;
 }
 body nav ul {

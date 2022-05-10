@@ -72,6 +72,7 @@ body {
 
     // Navigation section css starts
     nav {
+        display: flex;
         padding: 30px;
         &.r-nav {
             // background:transparent;
@@ -79,11 +80,16 @@ body {
             padding: 10px 0;
             transition: 0.5s all ease;
         }
-        .navbar-brand , .logo {
+        .navbar-brand {
             width: 50px;
             height: 50px;
-            font-size: 40px;
-            color: #ffffff;
+            display: flex;
+            // justify-content: center;
+            // align-items: center;
+            .brand-name {
+                font-size: 40px;
+                color: #ffffff;
+            }
             a {
                 padding: 10px;
 
