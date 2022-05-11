@@ -22,28 +22,24 @@
     <main>
         <!-- navigation bar starts -->
         <nav id="navbar" class="navbar navbar-expand-lg nav-fixed fixed-top scrolled r-nav">
-            <div class="container">
-                <!-- <div class="logo"> -->
-                    <a class="navbar-brand" href="#">
-                        <img src="/images/icons/alogo.png"  class="d-inline-block align-text-top logo" width="50px" height="50px" alt="logo">
-                        <h1 class="brand-name">AINA</h1>
-                    </a>
-                <!-- </div> -->
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navMenu"><span><i class="fas fa-bars humbar"></i></span></button>
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#services-section" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#skills-section" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                        <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/images/icons/alogo.png" alt="logo">
+                <h1 id="brand-name">Aina Andriamiadantsoa</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navMenu"><span><i class="fas fa-bars humbar"></i></span></button>
+            
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services-section" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </nav>
         <!-- navigation bar starts -->
+
         <!-- Header section starts -->
         <header id="home-section" class="home">
             <div class="container-fluid mb-3">
@@ -66,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container header-content">
+            <div class="container">
                 <div class="row justify-content-around">
                     <div class="col-lg-4 col-11">
                         <div class="card">
@@ -94,9 +90,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row justify-content-end">
-                    <div class="social-link-to-hide">
+                    <div class="social-network">
                         <ul class="list-unstyled">
                             <li class="list-item"><a href="https://web.facebook.com/aina.andriamiadantsoa.7" target="_blank"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
                             <li class="list-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
@@ -108,12 +104,12 @@
                 </div>
             </div>
             <div id="scroll-down" class="container mt-5">
-                <div class="row justify-content-center mt-5">
-                    <div class="col-lg-3 mt-5 ">
-                        <p class="about-btn-title">MORE ABOUT ME</p>
-                        <div class="flex-box">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <p class="d-block moreAbout">MORE ABOUT ME</p>
+                        <div class="flex">
                             <a href="#about-section" class="scroll-button text-center">
-                                <img src="/images/icons/down-arrow.svg" height="40px" width="40px" alt="image">
+                                <img id="arrow" src="/images/icons/down-arrow.svg" height="40px" width="40px" alt="image">
                             </a>
                         </div>
                     </div>
@@ -147,7 +143,7 @@
                     </div>
                     <!-- Article 01 ends here -->
                     <!-- Profile picture starts here -->
-                    <div class="col-lg-4 col-11 ">
+                    <div class="col-lg-4 col-10 ">
                         <div class="card">
                             <img src="/images/Founders.JPG" class="img-fluid" alt="profile picture">
                             <div class="card-body">
@@ -191,33 +187,17 @@
                     <!-- Article 02 ends here -->
                 
                 </div>
-                <div class="row">
-                    <!-- Contact starts here -->
-                    <div class="col-lg-4 col-11 mt-3">
-                        <div class="flex-box">
-                            <a href="#contact-section" class="btn">CONTACT ME</a>
-                        </div>
-                    </div>
-                    <!-- Contact starts here -->
-                    <div class="col-lg-4 col-11 "></div>
-                    <!-- Download cv starts here -->
-                    <div class="col-lg-4 col-11 mt-3">
-                        <div class="flex-box">
-                            <a href="#" class="btn">DOWNLOAD CV</a>
-                        </div>
-                    </div>
-                    <!-- Download cv ends here -->
-                </div>
             </div>
         </section>
         <!-- About section ends here -->
+
         <!-- Skills section starts here -->
-        <section id="services-section" class="skills">
+        <section id="services-section" class="services">
             <div class="container">
                 <div class="row">
                     <h2 class="skills-title">Services</h2>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-lg-4 col-11">
                         <div id="card" class="card">
                             <div class="card-body">
@@ -261,32 +241,12 @@
         </section>
         <!-- Skills section ends here -->
 
-        <!-- Services section starts -->
-        <section id="services-section" class="services">
-            <div class="container">
-                <div class="row">
-                    <h2 class="services-title">My skills</h2>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 border">
-                        <div class="canvas-box">
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services section ends -->
-
         <!-- Portfolio section starts -->
         <section id="portfolio-section" class="portfolio">
             <div class="container">
                 <div class="row">
                     <h2 class="portfolio-title">Portfolio</h2>
                 </div>
-            </div>
-            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-11">
                         <div class="card">
@@ -325,32 +285,9 @@
                     <h2 class="contact-title">Contact Me</h2>
                 </div>
                 <div class="row justify-content-around">
-                    <div id="FAQ" class="col-lg-6 col-11">
-                        <h4 class="display-6 text-center my-3">FAQ</h4>
-                        <div class="block-box p-2 px-2">
-                            <div class="row">
-                                <input type="text" class="form-control my-3" placeholder="Firstname">
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control my-3" placeholder="Lastname">
-                            </div>
-                            <div class="row">
-                                <input type="email" class="form-control my-3" placeholder="Email">
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control my-3" placeholder="Subject">
-                            </div>
-                            <div class="row">
-                                <textarea name="" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
-                            </div>
-                            <div class="flex-box justify-content-end ">
-                                <a href="#" class="btn">SEND MESSAGE</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 col-11">
                         <div class="card">
-                            <h4 class="display-6 text-center my-3">Contact</h4>
+                            <!-- <h4 class="display-6 text-center my-3">Contact</h4> -->
                             <div class="card-body">
                                 <div id="email" class="block-box text-center">
                                     <h4>Email</h4>
@@ -376,17 +313,40 @@
                             </div>
                         </div>
                     </div>
+                    <div id="FAQ" class="col-lg-6 col-11">
+                        <!-- <h4 class="display-6 text-center my-3">FAQ</h4> -->
+                        <div class="block-box p-2 px-2">
+                            <div class="row">
+                                <input type="text" class="form-control my-3" placeholder="Firstname">
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control my-3" placeholder="Lastname">
+                            </div>
+                            <div class="row">
+                                <input type="email" class="form-control my-3" placeholder="Email">
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control my-3" placeholder="Subject">
+                            </div>
+                            <div class="row">
+                                <textarea name="" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
+                            </div>
+                            <div class="flex justify-content-end ">
+                                <a href="#" class="btn">SEND MESSAGE</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Contact section ends here -->
         
         <!-- Footer section starts here -->
-        <footer id="footer-section" class="footer">
-            <div class="container">
+        <footer id="footer-section">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="flex-box">
-                        <p>AinaHjs.github.io by Andriamiadantsoa Aina</p>
+                    <div class="footer">
+                        <p>AinaHjs.github.io By Aina Andriamiadantsoa</p>
                     </div>
                 </div>
             </div>
