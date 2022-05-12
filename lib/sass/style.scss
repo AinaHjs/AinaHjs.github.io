@@ -218,15 +218,46 @@ main {
         padding: 10px;
         margin: 10px;
         }
+        a {
+            text-decoration: none;
+            img {
+                margin-right:20px;
+            }
+        }
 
+
+    }
+
+    #snForSmallScreen {
+        .social-network {
+            display: flex;
+            justify-content: center;
+            ul {
+                li {
+                    height: 50px;
+                    width: 50px;
+                    a {
+                        margin: 20px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    a:hover {
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // footer section
     .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 200px;
+        text-align: center;
+        margin-top: 50px;
         padding:10px;
         background-color: #000;
         p {

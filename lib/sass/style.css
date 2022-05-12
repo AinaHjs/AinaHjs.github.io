@@ -180,11 +180,34 @@ main .contact #email, main .contact #phone, main .contact #address {
   padding: 10px;
   margin: 10px;
 }
-main .footer {
+main .contact a {
+  text-decoration: none;
+}
+main .contact a img {
+  margin-right: 20px;
+}
+main #snForSmallScreen .social-network {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 200px;
+}
+main #snForSmallScreen .social-network ul li {
+  height: 50px;
+  width: 50px;
+}
+main #snForSmallScreen .social-network ul li a {
+  margin: 20px;
+}
+main #snForSmallScreen .social-network ul li a img {
+  width: 20px;
+  height: 20px;
+}
+main #snForSmallScreen .social-network ul li a:hover img {
+  width: 25px;
+  height: 25px;
+}
+main .footer {
+  text-align: center;
+  margin-top: 50px;
   padding: 10px;
   background-color: #000;
 }
