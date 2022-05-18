@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/sass/style.css">
+    <link rel="stylesheet" href="lib/sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
@@ -19,30 +19,46 @@
     <title>Aina Andriamiadantsoa</title>
 </head>
 <body>
-    <main>
-        <!-- navigation bar starts -->
-        <nav id="navbar" class="navbar navbar-expand-lg nav-fixed fixed-top scrolled r-nav">
-            <a class="navbar-brand" href="#">
-                <img id="logo" src="/images/icons/alogo.png" alt="logo">
-                <h1 id="brand-name">Aina Andriamiadantsoa</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navMenu"><span><i class="fas fa-bars humbar"></i></span></button>
-            
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#services-section" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- navigation bar starts -->
+    <!-- Header section -->
+    <header class="header sticky-md-top shadow-sm">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-md-4 col-sm-3 col brand">
+                    <a href="#">
+                        <img src="/images/icons/alogo.png" alt="Logo" width="35px" height="35px">
+                    </a>
+                </div>
+                <div class="col-md-8 col-sm-9 col navigationBar">
+                    <!-- Navigation for large screen -->
+                    <nav class="nav">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
 
-        <!-- Header section starts -->
-        <header id="home-section" class="home">
-            <div class="container-fluid mb-3">
+                    <!-- Navigation for small screen -->
+                    <div class="smallScreenMenu">
+                        <p class="dropdown-toggle m-0 p-0" id="menuForSmallScreen" type="button" data-bs-toggle="dropdown" area-expanded="false">Menu</p>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuForSmallScreen">
+                            <li><a href="#home" class="dropdown-item active">Home</a></li>
+                            <li><a href="#about" class="dropdown-item">About</a></li>
+                            <li><a href="#services" class="dropdown-item">Services</a></li>
+                            <li><a href="#portfolio" class="dropdown-item">Portfolio</a></li>
+                            <li><a href="#contact" class="dropdown-item">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main section -->
+    <main class="main">
+        <!-- Home section -->
+        <section id="home" class="home">
+            <div class="container-fluid mb-5">
                 <div id="welcome-banner" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="0" aria-label="slide 0" class="active" aria-current="true"></button>
@@ -62,102 +78,78 @@
                     </div>
                 </div>
             </div>
+
             <div class="container">
                 <div class="row justify-content-around">
-                    <div class="col-lg-4 col-11">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/code-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web</h4>
+                                <h3 class="card-title"><img src="/images/icons/code-solid.svg" class="me-3" alt="img">Web</h3>
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-11">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/bars-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Design</h4>
+                                <h3 class="card-title"><img src="/images/icons/discord-brands.svg" class="me-3" alt="img">Design</h3>
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-11">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/server-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">CNC</h4>
+                                <h3 class="card-title"><img src="/images/icons/network-wired-solid.svg" class="me-3" alt="img">CNC</h3>
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-end">
-                    <div class="social-network">
-                        <ul class="list-unstyled">
-                            <li class="list-item"><a href="https://web.facebook.com/aina.andriamiadantsoa.7" target="_blank"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
-                            <li class="list-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
-                            <li class="list-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
-                            <li class="list-item"><a href="https://github.com/AinaHjs" targer="_blank"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
-                            <li class="list-item"><a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="scroll-down" class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3">
-                        <p class="d-block moreAbout">MORE ABOUT ME</p>
-                        <div class="flex">
-                            <a href="#about-section" class="scroll-button text-center">
-                                <img id="arrow" src="/images/icons/down-arrow.svg" height="40px" width="40px" alt="image">
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Header section ends -->
+        </section>
+        <!-- / Home section -->
 
-        <!-- About section starts here -->
-        <section id="about-section" class="about">
+
+        
+        <!-- About section -->
+        <section id="about" class="about">
             <div class="container">
-                <div class="row">
-                    <h2 class="about-title">About The author</h2>
+                <div class="row title">
+                    <h2>About The author</h2>
                 </div>
-                <div class="row justify-content-center">
-                    <!-- Article 01 starts here -->
-                    <div class="col-lg-4 col-11">
-                        <div id="card" class="card">
+
+
+                <div class="row justify-content-around">
+                    <div class="col-lg-4">
+                        <div id="md-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title">The author</h4>
+                                <h3 class="card-title">The author</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam Lorem ipsum dolor sit amet.</p>
                             </div>
                         </div>
-                        <div id="card" class="card">
+                        <div id="md-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Studies</h4>
+                                <h3 class="card-title">Studies</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Article 01 ends here -->
-                    <!-- Profile picture starts here -->
+
                     <div class="col-lg-4 col-10 ">
                         <div class="card">
-                            <img src="/images/Founders.JPG" class="img-fluid" alt="profile picture">
+                            <img src="/images/Founders.JPG" class="card-img-top" alt="profile picture">
                             <div class="card-body">
-                                <h4 class="card-title text-center">Aina Andriamiadantsoa</h4>
-                                <p class="card-text text-center">The author</p>
+                                <h3 class="card-title text-center">Aina Andriamiadantsoa</h3>
+                                <p class="card-text text-center">-- Citation --</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Profile picture ends here -->
-                    <!-- Article 02 starts here -->
-                    <div class="col-lg-4 col-11 ">
-                        <div id="exp-card" class="card">
+                    
+                    <div class="col-lg-4 ">
+                        <div id="lg-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Experiences</h4>
+                                <h3 class="card-title">Experiences</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur? Culpa asperiores quia eum saepe animi debitis?</p>
                                 <div id="slider" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
@@ -184,135 +176,131 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Article 02 ends here -->
-                
                 </div>
             </div>
         </section>
-        <!-- About section ends here -->
+        <!-- / About section -->
 
-        <!-- Skills section starts here -->
-        <section id="services-section" class="services">
+        <!-- Services section -->
+        <section id="services" class="services">
             <div class="container">
-                <div class="row">
-                    <h2 class="skills-title">Services</h2>
+                <div class="row title">
+                    <h2>Services</h2>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-11">
-                        <div id="card" class="card">
+
+
+                <div class="row justify-content-around">
+                    <div class="col-lg-4">
+                        <div id="md-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/laptop-code-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web application</h4>
+                                <h3 class="card-title"><img src="/images/icons/laptop-code-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web application</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
                             </div>
                         </div>
-                        <div id="card" class="card">
+                        <div id="md-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/code-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web site</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-11">
-                        <div id="card" class="card">
-                            <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/network-wired-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Graphic Design</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
-                            </div>
-                        </div>
-                        <div id="card" class="card">
-                            <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/network-wired-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img">Web Design</h4>
+                                <h3 class="card-title"><img src="/images/icons/code-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web site</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-11">
-                        <div id="networking-card" class="card">
+                    <div class="col-lg-4">
+                        <div id="md-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title text-center"><img src="/images/icons/network-wired-solid.svg" class="img-fluid me-4" height="25px" width="25px" alt="img"> CNC</h4>
+                                <h3 class="card-title"><img src="/images/icons/network-wired-solid.svg" class="me-3" height="25px" width="25px" alt="img">Graphic Design</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                            </div>
+                        </div>
+                        <div id="md-card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title"><img src="/images/icons/network-wired-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web Design</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="lg-card" class="card">
+                            <div class="card-body">
+                                <h3 class="card-title"><img src="/images/icons/server-solid.svg" class="me-3" alt="img"> CNC</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur? Culpa asperiores quia eum saepe animi debitis?</p>  
-                                <div class="canvas">
-                                </div>                              
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Skills section ends here -->
+        <!-- / Services section -->
 
-        <!-- Portfolio section starts -->
-        <section id="portfolio-section" class="portfolio">
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
             <div class="container">
-                <div class="row">
-                    <h2 class="portfolio-title">Portfolio</h2>
+                <div class="row title">
+                    <h2>Portfolio</h2>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-11">
-                        <div class="card">
+
+
+                <div class="row justify-content-around">
+                    <div class="col-lg-3">
+                        <div id="lg-card" class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Web Portfolio</h4>
+                                <h3 class="card-title">Portfolio</h3>
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-11">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Design Portfolio</h4>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                    <div class="col-lg-9">
+                        <div id="lg-card" class="">
+                            <div class="">
+                                <h3 class="text-center">Portfolio</h3>
+                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-11">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">CNC</h4>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>        
         </section>
-        <!-- Portfolio section ends -->
+        <!-- / Portfolio -->
 
-        <!-- Contact section starts here -->
-        <section id="contact-section" class="contact">
+        <!-- Contact section -->
+        <section id="contact" class="contact">
             <div class="container">
-                <div class="row">
-                    <h2 class="contact-title">Contact Me</h2>
+                <div class="row title">
+                    <h2>Contact Me</h2>
                 </div>
-                <div class="row justify-content-around">
-                    <div class="col-lg-6 col-11">
+                <div class="row content justify-content-around">
+                    <div class="col-lg-6 justify-content-center">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo assumenda aliquid hic perferendis officiis autem quasi quisquam doloremque esse, atque porro expedita consequuntur molestias tempore voluptatum consectetur mollitia distinctio!</p>
-                        <div class="">
-                            <p><a href="mailto:andriamiadantsoaaina@gmail.com" target="_blank" class="email"><img class="contact-img" src="/images/icons/envelope-solid.svg" alt="email-icon">andriamiadantsoaaina@gmail.com</a></p>
-                            <p><a href="tel:+261 032 66 245 62"><img class="contact-img" src="/images/icons/phone-solid.svg" alt="phone-icon">+261 032 66 245 62</a></p>
-                            <p><a href="#"><img class="contact-img" src="/images/icons/location-dot-solid.svg" alt="location-icon"></a>Lot IIE 46Bter ,Ampanotokana, Antananarivo, Madagascar</p>
+                        <div class="div">
+                            <img src="/images/map.png" class="img-fluid" width="100%" height="300px" alt="image">
+                        </div>
+                        <div class="my-contact">
+                            <p><a href="mailto:andriamiadantsoaaina@gmail.com" target="_blank" class="email"><img class="contact-img" src="/images/icons/envelope-solid.svg" width="25px" height="25px" alt="email-icon">andriamiadantsoaaina@gmail.com</a></p>
+                            <p><a href="tel:+261 032 66 245 62"><img class="contact-img" src="/images/icons/phone-solid.svg" width="25px" height="25px" alt="phone-icon">+261 032 66 245 62</a></p>
+                            <p><a href="#"><img class="contact-img" src="/images/icons/location-dot-solid.svg" width="25px" height="25px" alt="location-icon"></a>Lot IIE 46Bter ,Ampanotokana, Antananarivo, Madagascar</p>
                         </div>
                     </div>
-                    <div id="FAQ" class="col-lg-5 col-11">
-                        <h4 class="display-6 text-center my-3">FAQ</h4>
-                        <div class="block-box p-2 px-2">
-                            <div class="row">
-                                <input type="text" class="form-control my-3" placeholder="Firstname">
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control my-3" placeholder="Lastname">
-                            </div>
-                            <div class="row">
-                                <input type="email" class="form-control my-3" placeholder="Email">
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control my-3" placeholder="Subject">
-                            </div>
-                            <div class="row">
-                                <textarea name="" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
-                            </div>
-                            <div class="flex justify-content-end ">
-                                <a href="#" class="btn">SEND MESSAGE</a>
+                    <div id="FAQ" class="col-lg-5">
+                        <div id="lg-card"class="card p-3">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">FAQ</h3>
+                                <div class="row">
+                                    <input type="text" class="form-control my-3" placeholder="Firstname">
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control my-3" placeholder="Lastname">
+                                </div>
+                                <div class="row">
+                                    <input type="email" class="form-control my-3" placeholder="Email">
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control my-3" placeholder="Subject">
+                                </div>
+                                <div class="row">
+                                    <textarea name="" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
+                                </div>
+                                <div class="send-message">
+                                    <a href="#" class="btn">SEND MESSAGE</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,35 +308,30 @@
 
             </div>
         </section>
-        <section id="snForSmallScreen">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="social-network">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="https://web.facebook.com/aina.andriamiadantsoa.7" target="_blank"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
-                            <li class="list-inline-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/AinaHjs" targer="_blank"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact section ends here -->
+        <!-- / Contact section -->
         
-        <!-- Footer section starts here -->
-        <footer id="footer-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="footer">
-                        <p>AinaHjs.github.io By Aina Andriamiadantsoa</p>
-                    </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 socialNetworks">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://web.facebook.com/aina.andriamiadantsoa.7" target="_blank"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/AinaHjs" targer="_blank"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 Aina">
+                    <p><a href="#home">ainahjs.github.io</a>  by <a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/">Aina Andriamiadantsoa</a></p>
                 </div>
             </div>
-        </footer>
-        <!-- Footer section ends here -->
-    </main>
+        </div>
+    </footer>
     
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

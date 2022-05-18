@@ -1,0 +1,240 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #585858;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #585858;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ACACAC;
+}
+
+/* 
+    1- Header section
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+header .brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .navigationBar {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+}
+header .navigationBar nav {
+  height: 50px;
+  align-items: center;
+}
+header .navigationBar nav a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #585858;
+  height: 40px;
+  margin-left: 15px;
+}
+header .navigationBar nav a:hover {
+  color: #4898C7;
+}
+header .navigationBar .smallScreenMenu {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+header .navigationBar .smallScreenMenu p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4898C7;
+}
+
+/* 
+    2- Main section
+*/
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-y: scroll;
+  height: 90vh;
+  /* 
+      Home section
+  */
+  /* 
+      About section
+  */
+  /* 
+      Services section
+  */
+  /* 
+      Portfolio section
+  */
+  /* 
+      Contact section
+  */
+}
+main #md-card {
+  height: 325px;
+}
+main #lg-card {
+  height: 670px;
+}
+main .card {
+  margin-bottom: 20px;
+  text-align: left;
+  border: none;
+  box-shadow: 1px 1px 16px #E5E5E5;
+  transition: 0.5s all;
+}
+main .card .card-body {
+  padding: 15px;
+  justify-content: center;
+  text-align: left;
+}
+main .card .card-body .card-title {
+  padding: 0px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+main .card .card-body .card-title img {
+  width: 23px;
+  height: 23px;
+}
+main .card .card-body .card-text {
+  text-align: left;
+}
+main .title {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+main .home {
+  margin-bottom: 50px;
+}
+main .about {
+  margin-bottom: 50px;
+}
+main .services {
+  margin-bottom: 50px;
+}
+main .portfolio {
+  margin-bottom: 50px;
+}
+main .contact {
+  margin-bottom: 50px;
+}
+main .contact .content .div {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #92A8B4;
+  overflow: hidden;
+}
+main .contact .content .my-contact a {
+  text-decoration: none;
+  color: #4898C7;
+}
+main .contact .content .my-contact a img {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+main .contact .content .send-message {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+main .contact .content .send-message .btn {
+  color: #4898C7;
+  font-weight: 600;
+  border: 1px solid #4898C7;
+  border-radius: 25px;
+  padding: 5px 25px;
+  justify-content: center;
+  transition: 0.5s all;
+}
+main .contact .content .send-message .btn:hover {
+  color: #fff;
+  font-weight: 600;
+  background-color: #4898C7;
+  border: 1px solid #4898C7;
+  border-radius: 25px;
+  padding: 5px 25px;
+  transition: 0.5s all ease;
+}
+
+/*
+    3- Footer section    
+*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px -1px 16px #E5E5E5;
+  z-index: 1000;
+}
+footer .socialNetworks {
+  display: flex;
+  justify-content: center;
+}
+footer .socialNetworks ul {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+footer .socialNetworks ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .socialNetworks ul li a img {
+  width: 18px;
+  height: 18px;
+}
+footer .socialNetworks ul li a:hover img {
+  width: 22px;
+  height: 22px;
+}
+footer .Aina {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .Aina p {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .Aina p a {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #4898C7;
+}/*# sourceMappingURL=main.css.map */
