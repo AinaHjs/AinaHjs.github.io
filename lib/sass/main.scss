@@ -1,6 +1,6 @@
 $primary: #4898C7;
 $secondary: #92A8B4;
-$paragraph: #ACACAC; 
+$paragraph: #858585; 
 $title: #585858;
 
 
@@ -28,6 +28,10 @@ p {
     font-size: 16px;
     line-height: 26px;
     color: $paragraph;
+}
+
+.Tab {
+    width: 50px;
 }
 
 
@@ -104,7 +108,6 @@ main {
         .card-body {
             padding: 15px;
             justify-content: center;
-            text-align: left;
             .card-title {
                 padding: 0px;
                 margin-bottom: 15px;
@@ -115,9 +118,16 @@ main {
                 }
             }
             .card-text {
-                text-align: left;
+                text-align: justify;
             }
         }
+    }
+    .card:hover {
+        margin-bottom: 20px;
+        text-align: left;
+        border: none;
+        box-shadow: 1px 1px 16px #92A8B4;
+        transition: 0.5s all;
     }
 
     .title {

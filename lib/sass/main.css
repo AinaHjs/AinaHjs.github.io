@@ -20,7 +20,11 @@ p {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   line-height: 26px;
-  color: #ACACAC;
+  color: #858585;
+}
+
+.Tab {
+  width: 50px;
 }
 
 /* 
@@ -109,7 +113,6 @@ main .card {
 main .card .card-body {
   padding: 15px;
   justify-content: center;
-  text-align: left;
 }
 main .card .card-body .card-title {
   padding: 0px;
@@ -121,7 +124,14 @@ main .card .card-body .card-title img {
   height: 23px;
 }
 main .card .card-body .card-text {
+  text-align: justify;
+}
+main .card:hover {
+  margin-bottom: 20px;
   text-align: left;
+  border: none;
+  box-shadow: 1px 1px 16px #92A8B4;
+  transition: 0.5s all;
 }
 main .title {
   display: flex;
