@@ -6,25 +6,21 @@
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  color: #585858;
-  font-size: 30px;
+  color: #0E2C3D;
+  font-size: 40px;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  color: #585858;
-  font-size: 20px;
+  color: #0E2C3D;
+  font-size: 25px;
 }
 
 p {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #858585;
-}
-
-.Tab {
-  width: 50px;
 }
 
 /* 
@@ -41,6 +37,9 @@ header .brand {
   justify-content: flex-start;
   align-items: center;
 }
+header .brand h6 {
+  font-size: 20px;
+}
 header .navigationBar {
   display: flex;
   justify-content: end;
@@ -54,7 +53,7 @@ header .navigationBar nav {
 header .navigationBar nav a {
   font-size: 18px;
   font-weight: 600;
-  color: #585858;
+  color: #0E2C3D;
   height: 40px;
   margin-left: 15px;
 }
@@ -62,25 +61,58 @@ header .navigationBar nav a:hover {
   color: #4898C7;
 }
 header .navigationBar .smallScreenMenu {
-  margin-left: 15px;
-  margin-right: 15px;
+  display: none;
 }
-header .navigationBar .smallScreenMenu p {
+header.headerScrolled {
+  background-color: #0E2C3D;
+  transition: all 2s ease-in-out;
+}
+header.headerScrolled h6 {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+header.headerScrolled .navigationBar {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+}
+header.headerScrolled .navigationBar nav {
+  height: 50px;
+  align-items: center;
+}
+header.headerScrolled .navigationBar nav a {
   font-size: 18px;
   font-weight: 600;
+  color: #fff;
+  height: 40px;
+  margin-left: 15px;
+  transition: all 0.5s;
+}
+header.headerScrolled .navigationBar nav a:hover {
   color: #4898C7;
+  transition: all 0.5s;
+}
+header.headerScrolled .navigationBar .smallScreenMenu {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: none;
+}
+header.headerScrolled .navigationBar .smallScreenMenu p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff !important;
+  transition: 0.8s all ease-in-out;
 }
 
 /* 
     2- Main section
 */
 main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   overflow-y: scroll;
-  height: 90vh;
+  overflow-x: hidden;
+  height: 92vh;
   /* 
       Home section
   */
@@ -97,17 +129,29 @@ main {
       Contact section
   */
 }
-main #md-card {
-  height: 325px;
+main.main-bgc-01 {
+  background-color: red;
 }
-main #lg-card {
-  height: 670px;
+main.main-bgc-02 {
+  background-color: green;
+}
+main.main-bgc-03 {
+  background-color: grey;
+}
+main.main-bgc-04 {
+  background-color: #4898C7;
+}
+main.main-bgc-05 {
+  background-color: #000;
+}
+main.main-bgc-default {
+  background-color: lightcyan;
 }
 main .card {
   margin-bottom: 20px;
   text-align: left;
   border: none;
-  box-shadow: 1px 1px 16px #E5E5E5;
+  border-radius: 0px;
   transition: 0.5s all;
 }
 main .card .card-body {
@@ -120,8 +164,8 @@ main .card .card-body .card-title {
   align-items: center;
 }
 main .card .card-body .card-title img {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
 }
 main .card .card-body .card-text {
   text-align: justify;
@@ -130,7 +174,7 @@ main .card:hover {
   margin-bottom: 20px;
   text-align: left;
   border: none;
-  box-shadow: 1px 1px 16px #92A8B4;
+  cursor: pointer;
   transition: 0.5s all;
 }
 main .title {
@@ -138,82 +182,493 @@ main .title {
   height: 80px;
   align-items: center;
 }
+main .title h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
 main .home {
   margin-bottom: 50px;
 }
+main .home .home-background {
+  height: 600px;
+  width: 100%;
+  transition: all 1s;
+}
+main .home .card {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #fff;
+  padding: 15px;
+}
+main .home .card .card-body .card-title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+main .home .card .card-body .card-title img {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+main .home .card .card-body .card-title:hover {
+  transform: scale(1.5, 1.5);
+  transition: all 0.8s;
+}
+main .home .card:hover {
+  z-index: 11;
+  transition: all 1s ease 0.1s;
+}
 main .about {
   margin-bottom: 50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+main .about .about-author {
+  position: relative;
+}
+main .about .about-author .profile-picture {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+main .about .about-author .profile-picture img {
+  width: 450px;
+  height: 600px;
+}
+main .about .about-author .bg {
+  margin: 0;
+  height: 600px;
+  width: 830px;
+  background-color: #0E2C3D;
+  opacity: 75%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .about .about-author .about-me {
+  background-color: transparent;
+  margin: 0;
+  padding: 50px;
+  height: 600px;
+  width: 830px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+main .about .about-author .about-me .about-name h1 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+main .about .about-author .about-me .about-name h3 {
+  font-size: 20px;
+  color: #fff;
+}
+main .about .about-author .about-me .personal-profile p {
+  color: #92A8B4;
+}
+main .about .about-author .about-me .about-dev {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 200px;
+}
+main .about .about-author .about-me .about-dev h3 {
+  font-size: 18px;
+  color: #fff;
+}
+main .about .about-author .about-me .about-slogan {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 250px;
+  right: -60px;
+}
+main .about .about-author .about-me .about-slogan p {
+  font-size: 25px;
+  color: #fff;
+}
+main .about .about-author .about-me .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+}
+main .about .about-author .about-me .icon-box .me {
+  transition: all 1s ease;
+}
+main .about .about-author .about-me .icon-box .me img {
+  height: 80px;
+  width: 80px;
+  margin: 50px;
+}
+main .about .about-author .about-me .icon-box .studies {
+  transition: all 1s ease;
+}
+main .about .about-author .about-me .icon-box .studies img {
+  height: 80px;
+  width: 80px;
+  margin: 50px;
+}
+main .about .about-author .about-me .icon-box .jobExperience {
+  transition: all 1s ease;
+}
+main .about .about-author .about-me .icon-box .jobExperience img {
+  height: 80px;
+  width: 80px;
+  margin: 50px;
+}
+main .about .about-author .about-me .icon-box img:hover {
+  transform: scale(1.3, 1.3);
+  transition: transform 0.5s ease-in-out;
+}
+main .about .about-author .me-section {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  width: 830px;
+  background-color: #0E2C3D;
+  margin: 0;
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  transform: translateY(600px);
+  transition: all 1s;
+}
+main .about .about-author .me-section p {
+  color: #92A8B4;
+}
+main .about .about-author .me-section img {
+  height: 80px;
+  width: 60px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+main .about .about-author .me-section .down-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+main .about .about-author .me-section .down-arrow img {
+  height: 50px;
+  width: 50px;
+}
+main .about .about-author .studies-section {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  width: 830px;
+  background-color: #0E2C3D;
+  margin: 0;
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  transform: translateY(600px);
+  transition: all 1s;
+}
+main .about .about-author .studies-section h3 {
+  color: #fff;
+}
+main .about .about-author .studies-section ul li p {
+  color: #92A8B4;
+}
+main .about .about-author .studies-section img {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+main .about .about-author .studies-section .down-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+main .about .about-author .studies-section .down-arrow img {
+  height: 50px;
+  width: 50px;
+}
+main .about .about-author .job-experience-section {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  width: 830px;
+  background-color: #0E2C3D;
+  margin: 0;
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  transform: translateY(600px);
+  transition: all 1s;
+}
+main .about .about-author .job-experience-section p {
+  color: #92A8B4;
+}
+main .about .about-author .job-experience-section img {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+main .about .about-author .job-experience-section .down-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+main .about .about-author .job-experience-section .down-arrow img {
+  height: 50px;
+  width: 50px;
 }
 main .services {
   margin-bottom: 50px;
+  overflow-x: hidden;
+}
+main .services .web-app {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+main .services .web-app .card {
+  padding: 80px;
+  height: 600px;
+  width: 500px;
+  margin: 0px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: none;
+}
+main .services .web-app .card img {
+  width: 70px;
+  height: 70px;
+}
+main .services .web-site {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+main .services .web-site .card {
+  padding: 80px;
+  height: 600px;
+  width: 500px;
+  margin: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-shadow: none;
+}
+main .services .web-site .card img {
+  width: 70px;
+  height: 70px;
+}
+main .services .gdesign {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+main .services .gdesign .card {
+  padding: 80px;
+  height: 600px;
+  width: 500px;
+  margin: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-shadow: none;
+}
+main .services .gdesign .card img {
+  width: 70px;
+  height: 70px;
+}
+main .services .wdesign {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+main .services .wdesign .card {
+  padding: 80px;
+  height: 600px;
+  width: 500px;
+  margin: 0px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: none;
+}
+main .services .wdesign .card img {
+  width: 100px;
+  height: 100px;
+}
+main .services .cnc {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+main .services .cnc .card {
+  padding: 80px;
+  height: 600px;
+  width: 500px;
+  margin: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-shadow: none;
+}
+main .services .cnc .card img {
+  width: 60px;
+  height: 60px;
+  color: #000;
+}
+main .services .card .card-body .btn {
+  color: #fff;
+  width: 32px;
+  font-weight: 600;
+  background-color: #4898C7;
+  border: 1px solid #4898C7;
+  border-radius: 25px;
+  padding: 2px 2px;
+  justify-content: center;
+  display: none;
+  transition: 0.5s all;
+}
+main .services .card .card-body .btn .see-more {
+  display: none;
+}
+main .services .card:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.05);
+  z-index: 11;
+  transition: all 0.5s;
+}
+main .services .card:hover .card-body .button {
+  display: flex;
+  justify-content: flex-end;
+}
+main .services .card:hover .card-body .button .btn {
+  display: block;
+  height: 30px;
+  width: 30px;
+  transition: all 0.2s ease;
+}
+main .services .hideToRight {
+  transform: translateX(500px);
+  transition: all 1s;
+}
+main .services .hideToLeft {
+  transform: translateX(-500px);
+  transition: all 1s;
 }
 main .portfolio {
   margin-bottom: 50px;
 }
 main .contact {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-main .contact .content .div {
-  width: 100%;
-  height: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: #92A8B4;
-  overflow: hidden;
+main .contact .contact-us {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-main .contact .content .my-contact a {
-  text-decoration: none;
-  color: #4898C7;
+main .contact .contact-us .section-for-message {
+  height: 600px;
+  width: 500px;
+  margin: 0;
+  padding: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
-main .contact .content .my-contact a img {
-  height: 25px;
-  width: 25px;
-  margin-right: 15px;
+main .contact .contact-us .section-for-message .more-information h3 {
+  font-weight: 400;
+  color: #fff;
 }
-main .contact .content .send-message {
+main .contact .contact-us .section-for-message .more-information p {
+  color: #92A8B4;
+}
+main .contact .contact-us .section-for-message .message {
+  height: 100px;
   display: flex;
   justify-content: end;
-  margin-top: 50px;
+  align-items: start;
 }
-main .contact .content .send-message .btn {
-  color: #4898C7;
-  font-weight: 600;
-  border: 1px solid #4898C7;
-  border-radius: 25px;
-  padding: 5px 25px;
-  justify-content: center;
-  transition: 0.5s all;
-}
-main .contact .content .send-message .btn:hover {
-  color: #fff;
-  font-weight: 600;
-  background-color: #4898C7;
-  border: 1px solid #4898C7;
-  border-radius: 25px;
-  padding: 5px 25px;
-  transition: 0.5s all ease;
-}
-
-/*
-    3- Footer section    
-*/
-footer {
+main .contact .contact-us .section-for-message .message .send-message {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  box-shadow: 1px -1px 16px #E5E5E5;
-  z-index: 1000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #E8B8B8;
+  cursor: pointer;
 }
-footer .socialNetworks {
+main .contact .contact-us .section-for-message .message .send-message img {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  transform: rotateZ(-90deg);
+}
+main .contact .contact-us .section-for-message .message .send-message:hover {
+  transform: scale(0.9, 0.9);
+  transition: all 0.5s;
+}
+main .contact .contact-us .section-for-message .logo {
+  height: 250px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-footer .socialNetworks ul {
+main .contact .contact-us .section-for-message .logo img {
+  height: 80.68px;
+  width: 231.19px;
+}
+main .contact .contact-us .section-for-message .socialNetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contact .contact-us .section-for-message .socialNetworks p {
+  margin: 0;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #92A8B4;
+}
+main .contact .contact-us .section-for-message .socialNetworks ul {
   display: flex;
   align-items: center;
   margin: 0px;
 }
-footer .socialNetworks ul li {
+main .contact .contact-us .section-for-message .socialNetworks ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,29 +677,214 @@ footer .socialNetworks ul li {
   margin-left: 5px;
   margin-right: 5px;
 }
-footer .socialNetworks ul li a img {
+main .contact .contact-us .section-for-message .socialNetworks ul li a img {
   width: 18px;
   height: 18px;
 }
-footer .socialNetworks ul li a:hover img {
-  width: 22px;
-  height: 22px;
+main .contact .contact-us .section-for-message .socialNetworks ul li a img:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 11;
+  transition: all 0.5s;
 }
-footer .Aina {
+main .contact .contact-us .bg {
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  width: 500px;
+  background-color: #0E2C3D;
+  opacity: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .contact .contact-us .form {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 500px;
+  height: 600px;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  transform: translateX(-500px);
+}
+main .contact .contact-us .form .cancel-message {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 16px #92A8B4;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
 }
-footer .Aina p {
-  margin: 0px;
+main .contact .contact-us .form .cancel-message img {
+  height: 20px;
+  width: 20px;
+  transform: rotateZ(90deg);
+}
+main .contact .contact-us .form .cancel-message:hover {
+  transform: scale(0.8, 0.8);
+  transition: all 0.5s;
+}
+main .contact .contact-us .form .form-input {
+  width: 500px;
+  margin: 0;
+}
+main .contact .contact-us .form .form-input h3 {
+  font-weight: 400;
+  color: #4898C7;
+}
+main .contact .contact-us .form .form-input form .row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 }
-footer .Aina p a {
+main .contact .contact-us .form .form-input form .row input {
+  width: 450px;
+}
+main .contact .contact-us .form .form-input form .row textarea {
+  width: 450px;
+}
+main .contact .contact-us .form .form-input form .btn {
+  color: #4898C7;
+  font-weight: 600;
+  border: 1px solid #4898C7;
+  border-radius: 25px;
+  padding: 5px 25px;
+  justify-content: center;
+  transition: 0.5s all;
+}
+main .contact .contact-us .form .form-input form .btn:hover {
+  color: #fff;
+  font-weight: 600;
+  background-color: #4898C7;
+  border: 1px solid #4898C7;
+  border-radius: 25px;
+  padding: 5px 25px;
+  transition: 0.5s all ease;
+}
+main .contact .contact-us .contact-section {
+  height: 600px;
+  width: 780px;
+  margin: 0;
+  padding-left: 50px;
+  background-color: #E9FEF9;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+main .contact .contact-us .contact-section .map {
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+main .contact .contact-us .contact-section .my-contact a {
+  text-decoration: none;
+  color: #4898C7;
+}
+main .contact .contact-us .contact-section .my-contact a img {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+main .contact .contact-us .contact-section .my-contact p {
+  color: #4898C7;
+}
+main .contact .contact-us .contact-section .Aina {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateZ(-90deg);
+  position: absolute;
+  top: 270px;
+  right: -180px;
+}
+main .contact .contact-us .contact-section .Aina p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+main .contact .contact-us .contact-section .Aina p a {
   margin-left: 15px;
   margin-right: 15px;
   text-decoration: none;
+  color: #CEC4F5;
+}
+
+/* 
+    for small screen
+*/
+.smallScreen h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #0E2C3D;
+  font-size: 28px;
+}
+.smallScreen h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #0E2C3D;
+  font-size: 18px;
+}
+.smallScreen p {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #858585;
+}
+.smallScreen header {
+  height: 50px;
+}
+.smallScreen header .brand img {
+  width: 25px;
+  height: 25px;
+}
+.smallScreen header .navigationBar {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  align-items: center;
+}
+.smallScreen header .navigationBar nav {
+  display: none;
+}
+.smallScreen header .navigationBar .smallScreenMenu {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  transition: 0.8 all ease-in;
+}
+.smallScreen header .navigationBar .smallScreenMenu p {
+  font-size: 16px;
+  font-weight: 600;
   color: #4898C7;
-}/*# sourceMappingURL=main.css.map */
+}
+.smallScreen main .home {
+  margin: 0px;
+}
+.smallScreen main .about {
+  margin: 0px;
+}
+.smallScreen main .services {
+  margin: 0px;
+}
+.smallScreen main .portfolio {
+  margin: 0px;
+}
+.smallScreen main .contact {
+  margin: 0px;
+}
+
+/* 
+    https://oraprdnt.uqtr.uquebec.ca/pls/public/docs/GSC26/O0000669899_100_jours.pdf
+*//*# sourceMappingURL=main.css.map */

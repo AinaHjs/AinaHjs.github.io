@@ -21,13 +21,13 @@
 <body>
     <!-- Header section -->
     <header class="header sticky-md-top shadow-sm">
-        <div class="container-fluid">
+        <div class="container-fluid m-auto justify-content-center">
             <div class="row justify-content-between">
                 <div class="col-md-4 col-sm-3 col brand">
                     <a href="#">
                         <img src="/images/icons/alogo.png" alt="Logo" width="35px" height="35px">
                     </a>
-                    <h6 class="card-text text-center ms-3">« Apprendre et entreprendre »</h6>
+                    <h6 class="card-text text-center ms-3">Portfolio version pour PC</h6>
                 </div>
                 <div class="col-md-8 col-sm-9 col navigationBar">
                     <!-- Navigation for large screen -->
@@ -35,7 +35,6 @@
                         <a href="#home" class="nav-link">Home</a>
                         <a href="#about" class="nav-link">About</a>
                         <a href="#services" class="nav-link">Services</a>
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
                         <a href="#contact" class="nav-link">Contact</a>
                     </nav>
 
@@ -46,7 +45,6 @@
                             <li><a href="#home" class="dropdown-item active">Home</a></li>
                             <li><a href="#about" class="dropdown-item">About</a></li>
                             <li><a href="#services" class="dropdown-item">Services</a></li>
-                            <li><a href="#portfolio" class="dropdown-item">Portfolio</a></li>
                             <li><a href="#contact" class="dropdown-item">Contact</a></li>
                         </ul>
                     </div>
@@ -59,50 +57,39 @@
     <main class="main">
         <!-- Home section -->
         <section id="home" class="home">
-            <div class="container-fluid mb-5">
-                <div id="welcome-banner" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="0" aria-label="slide 0" class="active" aria-current="true"></button>
-                        <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="1" aria-label="slide 1"></button>
-                        <button type="button" data-bs-target="welcome-banner" data-bs-slide-to="2" aria-label="slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/img01.png" alt="slide 0" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/img02.png" alt="slide 1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/img03.png" alt="slide 2" class="d-block w-100">
-                        </div>
-                    </div>
+            <div class="container-fluid p-0 banner">
+                <div class="home-background">
+                    <img src="/images/cardsimages/wdesign.jpg" alt="home-background">
                 </div>
             </div>
-
-            <div class="container">
-                <div class="row justify-content-around">
-                    <div class="col-lg-4">
+            <div class="container-fluid p-0">
+                <div class="row gx-0 p-0 justify-content-around">
+                    <div class="col-lg-3">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/code-solid.svg" class="me-3" alt="img">Web</h3>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                                <h3 class="card-title"><img src="/images/icons/laptop-code-solid.svg" class="card-img-top" alt="img">Web app</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/Design.svg" class="me-3" alt="img">Design</h3>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                                <h3 class="card-title"><img src="/images/icons/code-solid.svg" class="card-img-top" alt="img">Web</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/network-wired-solid.svg" class="me-3" alt="img">CNC</h3>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
+                                <h3 class="card-title"><img src="/images/icons/gDesign.svg" class="card-img-top" alt="img">Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title"><img src="/images/icons/network-wired-solid.svg" class="card-img-top" alt="img">CNC</h3>
                             </div>
                         </div>
                     </div>
@@ -112,46 +99,88 @@
         <!-- / Home section -->
 
 
-        
         <!-- About section -->
         <section id="about" class="about">
-            <div class="container">
-                <div class="row title">
-                    <h2>About Us</h2>
+            <div class="container-fluid p-0">
+                <div class="ms-4">
+                    <h2 class="title">About the author</h2>
                 </div>
 
-
-                <div class="row justify-content-around">
-                    <div class="col-lg-4">
-                        <div id="lg-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">The author</h3>
-                                <p class="card-text">
-                                    <span class="Tab"></span>Hello !! je m’appelle ANDRIAMIADANTSOA Aina Herilala, j’ai 27 ans et je suis Malgache. Intéressé et passionné par le domaine de l’IT, j’ai décidé de me lancer dans ce domaine pour que je puisse un jour, vivre de ma passion et en faire mon métier. Ainsi, j’ai poursuivi une étude à distance en informatique au Centre National de Télé-Enseignement de Madagascar depuis 2017 jusqu’à présent. Durant ces années je n’ai pensé qu’à travailler dure pour réaliser mon rêve et atteindre mes objectifs et grâce à Dieu, j’ai eu mon diplôme de Licence en Réseaux et Systèmes Informatique. <br><br> 
-                                    <span class="Tab"></span>J’ai créé ce site web non seulement pour mon Portfolio mais aussi pour que je puisse créer dès aujourd’hui mon avenir de demain et montrer aux autres qu’être informaticien ne se résume seulement pas sur le fait d’être un développeur ou un administrateur réseaux et systèmes mais d’être polyvalent sur ce domaine.
-                                </p>
-                            </div>
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto about-author p-0">
+                        <img src="/images/cardsimages/gdesign.jpg" alt="background-image">
+                        <div class="profile-picture">
+                            <img src="/images/Author/Founders.JPG" alt="profile-picture">
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-10 ">
-                        <div class="card">
-                            <img src="/images/Founders.JPG" class="card-img-top" alt="profile picture">
-                            <div class="card-body">
-                                <h3 class="card-title text-center">Aina Andriamiadantsoa</h3>
-                                <p class="card-text text-center">« Apprendre et entreprendre »</p>
-                            </div>
+                        <div class="bg">
+                            <!-- background-filter -->
                         </div>
-                    </div>
-                    
-                    <div class="col-lg-4 ">
-                        <div id="lg-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Experiences</h3>
-                                <p class="card-text">
-                                    Le mois d’Octobre 2021 j’étais recruté entant que stagiaire en réseaux et systèmes informatiques au sein de la Direction de l’informatique de la Bank Of Africa Madagascar (BOA Madagascar). <br><br>
-                                    Le mois de Février 2021 j’ai été employé à l’imprimerie NEW PRINT Madagascar entant que machiniste à presse numérique durant six (06) mois. Ma mission était de prendre sous ma responsabilité tous les travaux d’impression numérique, tels que les impressions au format standard et grand format, les impressions sur des papiers autocollants.
-                                </p>
+                        <div class="about-me">
+                            <div class="about-name">
+                                <h1 class="card-title text-center">AINA ANDRIAMIADANTSOA</h1>
+                                <h3 class="cart-subtitle text-center">Administrateur Réseaux et Systémes Informatique</h3>
+                            </div>
+                            <div class="personal-profile">
+                                <p class="text-center">" Sérieux, Honnête et Débrouilleur "</p>
+                            </div>
+                            <div class="about-dev">
+                                <h3 class="text-center">Développeur web en temps libres</h3>
+                            </div>
+                            <div class="about-slogan">
+                                <p class="card-text text-center mt-5">« Apprendre et entreprendre. »</p>
+                            </div>
+                            <div class="icon-box">
+                                <div class="me">
+                                    <img src="/images/icons/me.svg" alt="icon">
+                                </div>
+                                <div class="studies">
+                                    <img src="/images/icons/graduation-cap-solid.svg" alt="icon">
+                                </div>
+                                <div class="jobExperience">
+                                    <img src="/images/icons/jobexp.svg" alt="icon">
+                                </div>
+                            </div>
+                            <div class="card me-section">
+                                <div class="card-body">
+                                    <h3 class="card-title"><img src="/images/icons/me.svg" alt="icon"></h3>
+                                    <p class="card-text">Bonjour, je m’appelle Aina Andriamiadantsoa un passionné de la technologie informatique et un administrateur réseaux et systèmes informatique. En ce qui me concerne, je suis d’origine Malgache et âgé de 27 ans. Actuellement, je cherche un travail dans le domaine de l’informatique. Ambitieux et motivé, je me suis lancé dans le domaine l’IT pour pouvoir réaliser mon rêve, de vivre de ma passion et d’en faire un jour mon métier. Ainsi, j’entreprenais mes études en science de l’informatique au Centre National de Télé-Enseignement de Madagascar depuis 2017 jusqu’à présent et je suis diplômé de licence en réseaux et systèmes informatique. </p>
+                                    <p class="card-text">Pourquoi j’ai choisi l’informatique, parce que non seulement cette technologie nous permet d’avancer vers un monde moderne mais elle nous promet aussi une mode vie stable et simplifier basée sur automatisation. D’ailleurs, on la voie presque par tout, surtout dans le domaine professionnel et devient indispensable.</p>
+                                    <p class="card-text">Aujourd’hui, je veux lancer ma carrière professionnelle et j’ai créé ce site web en guise de Portfolio et pour montrer aux autres qu’être informaticien ne se résume seulement pas sur le fait d’être un développeur ou un administrateur réseaux et systèmes mais d’être polyvalent sur ce domaine.</p>
+                                    <div class="down-arrow">
+                                        <img src="../images/icons/down-arrow.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card studies-section">
+                                <div class="card-body">
+                                    <h3 class="card-title"><img src="/images/icons/graduation-cap-solid.svg" alt="icon"></h3>
+                                    <h3 class="card-title">Cursus universitaires :</h3>
+                                    <ul class="list-unstyled">
+                                        <li><p>2021-2022 :  Licence 3 en informatique au CNTEMAD.</p></li>
+                                        <li><p>2019-2020 :  Licence 2 en Informatique au CNTEMAD.</p></li>
+                                        <li><p>2017-2018 :  Licence 1 en Informatique au CNTEMAD.</p></li>
+                                    </ul>
+                                    <h3 class="card-title">Diplômes :</h3> 
+                                    <ul class="list-unstyled">
+                                        <li><p>2021-2022 : Diplôme de Licence en Réseaux et Systèmes Informatiques.</p></li>
+                                        <li><p>2016-2017 : Baccalauréat série D avec mention Assez-bien.</p></li>
+                                    </ul>    
+                                    <div class="down-arrow">
+                                        <img src="../images/icons/down-arrow.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card job-experience-section">
+                                <div class="card-body">
+                                    <h3 class="card-title"><img src="/images/icons/jobexp.svg" alt="icon"></h3>
+                                    <p class="card-text">
+                                        Le mois d’Octobre 2021 j’étais recruté entant que stagiaire en réseaux et systèmes informatiques au sein de la Direction de l’informatique de la Bank Of Africa Madagascar (BOA Madagascar). <br><br>
+                                        Le mois de Février 2021 j’ai été employé à l’imprimerie NEW PRINT Madagascar entant que conducteur de machine d’impression  numérique durant six (06) mois. Ma mission était de prendre sous ma responsabilité tous les travaux d’impression numérique, tels que les impressions au format standard et grand format, les impressions sur des papiers autocollants.
+                                    </p>
+                                    <div class="down-arrow">
+                                        <img src="../images/icons/down-arrow.svg" alt="icon">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -162,150 +191,178 @@
 
         <!-- Services section -->
         <section id="services" class="services">
-            <div class="container">
-                <div class="row title">
-                    <h2>Services</h2>
+            <div class="container-fluid p-0">
+                <div class="ms-4">
+                    <h2 class="title">Services</h2>
                 </div>
 
+                
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto p-0">
+                            <div class="web-site">
+                                <img src="images/cardsimages/website.jpg" class="servicesBackground" alt="image">
+                                <div class="card left">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3"><img src="/images/icons/code-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web site</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                                        <div class="button">
+                                            <a href="#" class="btn"><span class="see-more">See more</span><span class="more">+</span></a>
+                                        </div>
+                                    </div>                                        
+                                </div>
+                            </div>
+                    </div>
+                </div>
 
-                <div class="row justify-content-around">
-                    <div class="col-lg-4">
-                        <div id="md-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/laptop-code-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web application</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
-                            </div>
-                        </div>
-                        <div id="md-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/code-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web site</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div id="md-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/Design.svg" class="me-3" height="25px" width="25px" alt="img">Graphic Design</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
-                            </div>
-                        </div>
-                        <div id="md-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/WebDesign.svg" class="me-3" height="25px" width="25px" alt="img">Web Design</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto p-0">
+                        <div class="web-app">
+                            <img src="images/cardsimages/webapp.jpg" class="servicesBackground" alt="image">
+                            <div class="card right">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-3"><img src="/images/icons/laptop-code-solid.svg" class="me-3" height="25px" width="25px" alt="img">Web application</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                                    <div class="button">
+                                        <a href="#" class="btn"><span class="see-more">See more</span><span class="more">+</span></a>
+                                    </div>
+                                </div>                                        
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div id="lg-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title"><img src="/images/icons/server-solid.svg" class="me-3" alt="img"> CNC</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur? Culpa asperiores quia eum saepe animi debitis?</p> 
-                                <div id="slider" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/images/css3.png" alt="slides" class="d-block w-100 align-self-center">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/images/js.png" alt="slides" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/images/jquery.png" alt="slides" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/images/bootstrap.png" alt="slides" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/images/wp.png" alt="slides" class="d-block w-100">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/images/cisco.png" alt="slides" class="d-block w-100">
+                </div>
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto p-0 ">
+                            <div class="gdesign">
+                                <img src="images/cardsimages/gdesign.jpg" class="servicesBackground" alt="image">
+                                <div class="card left">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3"><img src="/images/icons/gDesign.svg" class="me-3" height="25px" width="25px" alt="img">Graphic Design</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                                        <div class="button">
+                                            <a href="#" class="btn"><span class="see-more">See more</span><span class="more">+</span></a>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto p-0">
+                        <div class="wdesign">
+                            <img src="images/cardsimages/wdesign.jpg" class="servicesBackground" alt="image">
+                            <div class="card right">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-3"><img src="/images/icons/wDesign.svg" class="me-3" height="50px" width="50px" alt="img">Web Design</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur?</p>
+                                    <div class="button">
+                                        <a href="#" class="btn"><span class="see-more">See more</span><span class="more">+</span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto p-0">
+                        <div class="cnc">
+                            <img src="images/cardsimages/devops.jpg" class="servicesBackground" alt="image">
+                            <div class="card left">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-3"><img src="/images/icons/server-solid.svg" class="me-3" alt="img"> CNC</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur eos doloribus repellat nulla quasi nihil voluptate temporibus id itaque. Accusamus perferendis rerum magnam laboriosam eum saepe, dolorum voluptate aliquid quam deserunt ullam iusto cum, ipsum aliquam. Praesentium illo porro nihil culpa pariatur? Culpa asperiores quia eum saepe animi debitis?</p> 
+                                    <div class="button">
+                                        <a href="#" class="btn"><span class="see-more">See more</span><span class="more">+</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
         <!-- / Services section -->
 
-        <!-- Portfolio -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <div class="row title">
-                    <h2>Portfolio</h2>
-                </div>
-
-
-                <div class="row justify-content-around">
-                    <div class="col-lg-3">
-                        <div id="lg-card" class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Portfolio</h3>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div id="lg-card" class="">
-                            <div class="">
-                                <h3 class="text-center">Portfolio</h3>
-                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dolores maxime ipsam suscipit ullam dolorum possimus magni autem. Suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </section>
-        <!-- / Portfolio -->
 
         <!-- Contact section -->
         <section id="contact" class="contact">
-            <div class="container">
-                <div class="row title">
-                    <h2>Contact Us</h2>
+            <div class="container-fluid p-0 justify-content-center">
+                <div class="ms-4">
+                    <h2 class="title">Contact Us</h2>
                 </div>
-                <div class="row content justify-content-around">
-                    <div class="col-lg-6 justify-content-center">
-                        <p>
-                            Pour plus d’infos sur nos services, n’hésitez pas à nous envoyer un email ou laissez-nous un message. Sinon contactez-nous directement via le numéro ci-dessous.
-                        </p>
-                        <div class="div">
-                            <img src="/images/map.png" class="img-fluid" width="100%" height="300px" alt="image">
-                        </div>
-                        <div class="my-contact">
-                            <p><a href="mailto:andriamiadantsoaaina@gmail.com" target="_blank" class="email"><img class="contact-img" src="/images/icons/envelope-solid.svg" width="25px" height="25px" alt="email-icon">andriamiadantsoaaina@gmail.com</a></p>
-                            <p><a href="tel:+261 032 66 245 62"><img class="contact-img" src="/images/icons/phone-solid.svg" width="25px" height="25px" alt="phone-icon">+261 032 66 245 62</a></p>
-                            <p><a href="#"><img class="contact-img" src="/images/icons/location-dot-solid.svg" width="25px" height="25px" alt="location-icon"></a>Lot IIE 46Bter ,Ampanotokana, Antananarivo, Madagascar</p>
-                        </div>
-                    </div>
-                    <div id="FAQ" class="col-lg-5">
-                        <div id="lg-card"class="card p-3">
-                            <div class="card-body">
-                                <h3 class="card-title text-center">FAQ</h3>
-                                <div class="row">
-                                    <input type="text" class="form-control my-3" placeholder="Firstname">
-                                </div>
-                                <div class="row">
-                                    <input type="text" class="form-control my-3" placeholder="Lastname">
-                                </div>
-                                <div class="row">
-                                    <input type="email" class="form-control my-3" placeholder="Email">
-                                </div>
-                                <div class="row">
-                                    <input type="text" class="form-control my-3" placeholder="Subject">
-                                </div>
-                                <div class="row">
-                                    <textarea name="" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
-                                </div>
-                                <div class="send-message">
-                                    <a href="#" class="btn">SEND MESSAGE</a>
-                                </div>
+                <div class="row p-0 justify-content-center">
+                    <div class="col-auto contact-us p-0">
+                        <img src="/images/cardsimages/wdesign.jpg" alt="background-image">
+                        <div class="section-for-message">
+                            <div class="more-information">
+                                <h3>Contactez-nous pour vos projets</h3>
+                                <p>Pour plus d’infos sur nos services, n’hésitez pas à nous envoyer un email ou laissez-nous un message. Sinon contactez-nous directement via le numéro ci-dessous.</p>
+                            </div>
+                            <div class="message">
+                                <p class="send-message"><img src="/images/icons/down-arrow.svg" alt="icon">Send message</p>                                    
+                            </div>
+                            <div class="logo">
+                                <img src="/images/icons/amlogo.png" alt="logo">
+                            </div>
+                            <div class="socialNetworks">
+                                <p>Rejoignez-nous sur</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="" target="_blank"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/AinaHjs" targer="_blank"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/" targer="_blank"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
+                                </ul>
                             </div>
                         </div>
+
+                        <div class="form">
+                            <div class="cancel-message">
+                                <img src="/images/icons/down-arrow.svg" alt="icon">
+                            </div>
+                            <div class="form-input">
+                                <h3>Envoyez-nous votre message</h3>
+                                <form action="https://formspree.io/f/xqknnrka" method="post">
+                                    <div class="row">
+                                        <input type="text" name="firstname" class="form-control my-3" placeholder="Firstname">
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" name="lastname" class="form-control my-3" placeholder="Lastname">
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" name="email" class="form-control my-3" placeholder="Email">
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" name="subject" class="form-control my-3" placeholder="Subject">
+                                    </div>
+                                    <div class="row">
+                                        <textarea name="message" id="" cols="30" rows="6" class="form-control my-3" placeholder="Your message"></textarea>
+                                    </div>
+                                    <div class="send-message">
+                                        <button type="submit" class="btn">SEND MESSAGE</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="bg">
+                            <!-- background filter -->
+                        </div>
+
+                        <div class="contact-section">
+                            <div class="map">
+                                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=epp%20ambatomaro&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div></div>
+                            </div>
+                            <div class="my-contact">
+                                <p><a href="mailto:andriamiadantsoaaina@gmail.com" target="_blank" class="email"><img class="contact-img" src="/images/icons/envelope-solid.svg" width="25px" height="25px" alt="email-icon">andriamiadantsoaaina@gmail.com</a></p>
+                                <p><a href="tel:+261 032 66 245 62"><img class="contact-img" src="/images/icons/phone-solid.svg" width="25px" height="25px" alt="phone-icon">+261 032 66 245 62</a></p>
+                                <p><a href="#"><img class="contact-img" src="/images/icons/location-dot-solid.svg" width="25px" height="25px" alt="location-icon"></a>Lot IIE 46Bter ,Ampanotokana, Antananarivo, Madagascar</p>
+                            </div>
+                            <div class="Aina">
+                                <p><a href="#home">ainahjs.github.io</a>  by <a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/">Aina Andriamiadantsoa</a></p>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
 
@@ -315,26 +372,10 @@
         
     </main>
 
-    <!-- Footer section -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row justify-content-around">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4 socialNetworks">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://web.facebook.com/aina.andriamiadantsoa.7" target="_blank"><img src="/images/icons/facebook-brands.svg" alt="twitter-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="/images/icons/twitter-brands.svg" alt="twitter-icon"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="/images/icons/instagram-brands.svg" alt="instagram-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/AinaHjs" targer="_blank"><img src="/images/icons/github-brands.svg" alt="github-icon"></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/"><img src="/images/icons/linkedin-brands.svg" alt="discord-icon"></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 Aina">
-                    <p><a href="#home">ainahjs.github.io</a>  by <a href="https://www.linkedin.com/in/aina-andriamiadantsoa-737ba8206/">Aina Andriamiadantsoa</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+
+
+    
     
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
